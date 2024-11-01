@@ -1,0 +1,15 @@
+.container { 
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.library{
+    width: 70%;
+
+}
+
+.book { 
+    text-orientation: sideways-right;
+    writing-mode: vertical-lr;
+}
