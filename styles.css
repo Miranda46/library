@@ -6,10 +6,35 @@
 
 .library{
     width: 70%;
-
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 4vh;
+    justify-content: center;
 }
 
 .book { 
     text-orientation: sideways-right;
-    writing-mode: vertical-lr;
+    writing-mode: vertical-rl;
+    background-color:blue;
+    font-size: max(50%, 12px);
+    margin: 0px 2px;
+    padding: 15px 0px;
+    min-height: 20px;
+    max-height: 150px;
+    max-width: 50px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}
+
+.form { 
+    display: block;
+    visibility: hidden;
+}
+
+.formular{
+    display: flex;
+    flex-direction: column;
+}
+
+#formular_button { 
+    justify-self: center;
 }

@@ -15,13 +15,15 @@
             <div class="shelf"></div>
         </div>
         <div class="formular">
-            <button>Add a new book</button>
-            <form action="#">
-                <fieldset>
-                    <div><label for="author">Author</label><input type="text" id="author"></div>
-                    <div><label for="title">Title</label><input type="text" id="title"></div>
-                    <div><label for="numPages">Number of pages</label><input type="number" id="numPages"></div>
-                    <div><label for="read">Have you read it yet</label><input type="checkbox" id="read"></div>        
+
+            <button id="formular_button">Add a new book</button>
+            <form action="#" >
+                <fieldset class="form" id="form">
+                    <div><label for="author">Author</label><input name="author" type="text" id="author"></div>
+                    <div><label for="title">Title</label><input name="title" type="text" id="title"></div>
+                    <div><label for="num_pages">Number of pages</label><input name="num_pages" type="number" id="num_pages"></div>
+                    <div><label for="read">Have you read it yet</label><input name="read" type="checkbox" id="read"></div>
+                    <button id="add_button" type="button">Add book</button>        
                 </fieldset>
             </form>
         </div>
@@ -31,6 +33,6 @@
 
 
 
-    <script type="text/script" src="./script.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
