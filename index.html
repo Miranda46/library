@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
     <div class="container">
         <div class="header">
@@ -15,17 +17,27 @@
             <div class="shelf"></div>
         </div>
         <div class="formular">
-
             <button id="formular_button">Add a new book</button>
-            <form action="#" >
-                <fieldset class="form" id="form">
-                    <div><label for="author">Author</label><input name="author" type="text" id="author"></div>
-                    <div><label for="title">Title</label><input name="title" type="text" id="title"></div>
-                    <div><label for="num_pages">Number of pages</label><input name="num_pages" type="number" id="num_pages"></div>
-                    <div><label for="read">Have you read it yet</label><input name="read" type="checkbox" id="read"></div>
-                    <button id="add_button" type="button">Add book</button>        
-                </fieldset>
-            </form>
+            <dialog class="dialog" id="dialog">
+                <form action="#">
+                    <fieldset class="form" id="form">
+                        <div class="entry"><label for="author">Author</label>
+                            <input name="author" type="text"
+                                id="author" required></div>
+                        <div class="entry"><label for="title">Title</label>
+                            <input name="title" type="text" id="title" required>
+                        </div>
+                        <div class="entry"><label for="num_pages">Number of pages</label>
+                            <input name="num_pages"
+                                type="number" id="num_pages" min="1" required></div>
+                        <div class="entry"><label for="read">Have you read it yet</label>
+                            <input name="read"
+                                type="checkbox" id="read"></div>
+                        <button id="add_button" type="button" >
+                            Add book</button>
+                    </fieldset>
+                </form>
+            </dialog> 
         </div>
     </div>
 
@@ -35,4 +47,5 @@
 
     <script type="text/javascript" src="./script.js"></script>
 </body>
+
 </html>
